@@ -3,23 +3,10 @@
     let currentTile = 0;
 </script>
 
-<AppRail>
-	<svelte:fragment slot="lead">
-		<AppRailAnchor href="/" >Docs</AppRailAnchor>
-	</svelte:fragment>
+<div class="relative bg-center bg-cover h-80">
+	<img class="w-full absolute" src="src/assets/banner_lab1.jpg" alt="" />
 
-	<AppRailTile bind:group={currentTile} name="tile-1" value={0} title="tile-1">
-		<svelte:fragment slot="lead">(icon)</svelte:fragment>
-		<span>Tile 1</span>
-	</AppRailTile>
-	<AppRailTile bind:group={currentTile} name="tile-2" value={1} title="tile-2">
-		<svelte:fragment slot="lead">(icon)</svelte:fragment>
-		<span>Tile 2</span>
-	</AppRailTile>
-	<AppRailTile bind:group={currentTile} name="tile-3" value={2} title="tile-3">
-		<svelte:fragment slot="lead">(icon)</svelte:fragment>
-		<span>Tile 3</span>
-	</AppRailTile>
-</AppRail>
-
-				
+	<h1 class="text-4xl absolute top-36 text-center font-bold w-full shadow-2xl`">
+		Tristan Voulelis
+	</h1>
+</div>
